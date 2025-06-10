@@ -7,7 +7,7 @@ const SignupForm = (props) => {
 
             event.preventDefault();
             
-            const Response = await fetch("http://3.80.194.147:3000/auth/sign-up", {
+            const Response = await fetch("http://34.228.71.240:3090/auth/sign-up", {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json'
@@ -38,7 +38,7 @@ const SignupForm = (props) => {
     }
 
     return (
-        <form className="signup-form"action="http://3.80.194.147:3000/auth/sign-up" method="POST" onSubmit={handleSubmit}>
+        <form className="signup-form"action="http://34.228.71.240:3090/auth/sign-up" method="POST" onSubmit={handleSubmit}>
 
             <h2>Signup for an Account!</h2>
             <label htmlFor="accountName">Account Name:</label>

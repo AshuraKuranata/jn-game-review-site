@@ -10,7 +10,7 @@ const LoginForm = (props) => {
             event.preventDefault();
 
             
-            const Response = await fetch("http://3.80.194.147:3000/auth/sign-in", {
+            const Response = await fetch("http://34.228.71.240:3090/auth/sign-in", {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json'
@@ -44,7 +44,7 @@ const LoginForm = (props) => {
     }
 
     return (
-        <form className="login-form" action="http://3.80.194.147:3000/auth/sign-in" method="POST" onSubmit={handleSubmit}>
+        <form className="login-form" action="http://34.228.71.240:3090/auth/sign-in" method="POST" onSubmit={handleSubmit}>
 
             <h2>Log in here!</h2>
 

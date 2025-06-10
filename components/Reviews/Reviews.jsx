@@ -10,7 +10,7 @@ const Reviews = (props) => {
         if (props.user.accountName !== '') {
             if (evt.target.name === 'likebutton') {
                 evt.target.innerText = 'Likes: ' + (parseInt(evt.target.value) + 1)
-                await fetch(`http://3.80.194.147:3000/reviews/${evt.target.id}/edit`, {
+                await fetch(`http://34.228.71.240:3090/reviews/${evt.target.id}/edit`, {
                     method: 'PUT',
                     headers: {
                     'Content-Type': 'application/json'
@@ -21,7 +21,7 @@ const Reviews = (props) => {
                 })
             } else {
                 evt.target.innerText = 'Dislikes: ' + (parseInt(evt.target.value) + 1)
-                    await fetch(`http://3.80.194.147:3000/reviews/${evt.target.id}/edit`, {
+                    await fetch(`http://34.228.71.240:3090/reviews/${evt.target.id}/edit`, {
                     method: 'PUT',
                     headers: {
                     'Content-Type': 'application/json'
@@ -38,7 +38,7 @@ const Reviews = (props) => {
 
         const getReviews = async () => {
             // Fetch all reviews from DB
-            const response = await fetch(`http://3.80.194.147:3000/reviews/`)
+            const response = await fetch(`http://34.228.71.240:3090/reviews/`)
             // const response = await fetch(`http://localhost:3000/reviews/`)
             // If successful...
             if (response) {

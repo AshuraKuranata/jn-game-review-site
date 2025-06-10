@@ -12,7 +12,7 @@ const EditReview = (props) => {
         evt.preventDefault();
         
         try {
-            const Response = await fetch(`http://3.80.194.147:3000/reviews/${props.reviewForm.reviewId}/edit`, {
+            const Response = await fetch(`http://34.228.71.240:3090/reviews/${props.reviewForm.reviewId}/edit`, {
                 method: 'PUT',
                 headers: {
                   'Content-Type': 'application/json'
