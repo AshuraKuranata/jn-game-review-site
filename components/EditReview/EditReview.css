@@ -1,0 +1,11 @@
+.reviewForm {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top right, rgb(35, 43, 49), rgb(34, 19, 19));
+}
+
+#starsBtn {
+    display: flex;
+    justify-content: space-evenly;
+}

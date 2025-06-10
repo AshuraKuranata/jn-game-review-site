@@ -1,0 +1,10 @@
+#revTitle {
+    font-size: 24px;
+    padding: 5px;
+    width: 60%;
+}
+
+#starsBtn {
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,16 @@
+.game-review-card {
+        background-color: rgb(226, 226, 226);
+        color: black;
+        border: 1px solid rgb(0, 140, 255);
+        box-shadow: 4px -4px 16px rgba(0, 140, 255, 0.5);
+        margin: 10px;
+        width: 250px;
+        padding: 8px;
+}
+
+.game-review-container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+}

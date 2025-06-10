@@ -1,0 +1,13 @@
+.usernameForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgb(111, 111, 116);
+    border-radius: 4px;
+    width: 80%;
+}
+
+.usernameForm > * {
+    margin-top: 8px;
+}
