@@ -8,7 +8,7 @@ const GameReviews = (props) => {
     useEffect(() => {
         const getGameReviews = async () => {
             console.log(props.gameData)
-            const response = await fetch(`http://34.228.71.240:3090/home/${props.gameData.gameAPIId}`, {
+            const response = await fetch(`http://34.227.48.9:3090/home/${props.gameData.gameAPIId}`, {
                 method: 'GET',
                 headers: {
                   'Content-Type': 'application/json'

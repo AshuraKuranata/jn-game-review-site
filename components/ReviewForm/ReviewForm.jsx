@@ -29,7 +29,7 @@ const ReviewForm = ({setGameData, gameData, setPage, setUserGameReview, user}) =
         try {
             
             // Send create new review req to db, and catpure response. 
-            const Response = await fetch("http://34.228.71.240:3090/reviews/new", {
+            const Response = await fetch("http://34.227.48.9:3090/reviews/new", {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json'

@@ -18,7 +18,7 @@ function App() {
   
   // useEffect(() => {
   //   const getData = async () => {
-  //     const response = await fetch(`http://34.228.71.240:3060/api/games`) // Update to AWS Server link after initialization
+  //     const response = await fetch(`http://34.227.48.9:3060/api/games`) // Update to AWS Server link after initialization
   //     const JSONdata = await response.json()
   //     setGamesData(JSONdata || [])
   //     console.log(JSONdata.results) // Shows Games Data fields in array to pull from 

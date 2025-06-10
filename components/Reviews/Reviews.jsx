@@ -10,7 +10,7 @@ const Reviews = (props) => {
         if (props.user.accountName !== '') {
             if (evt.target.name === 'likebutton') {
                 evt.target.innerText = 'Likes: ' + (parseInt(evt.target.value) + 1)
-                await fetch(`http://34.228.71.240:3090/reviews/${evt.target.id}/edit`, {
+                await fetch(`http://34.227.48.9:3090/reviews/${evt.target.id}/edit`, {
                     method: 'PUT',
                     headers: {
                     'Content-Type': 'application/json'
@@ -21,7 +21,7 @@ const Reviews = (props) => {
                 })
             } else {
                 evt.target.innerText = 'Dislikes: ' + (parseInt(evt.target.value) + 1)
-                    await fetch(`http://34.228.71.240:3090/reviews/${evt.target.id}/edit`, {
+                    await fetch(`http://34.227.48.9:3090/reviews/${evt.target.id}/edit`, {
                     method: 'PUT',
                     headers: {
                     'Content-Type': 'application/json'
@@ -38,7 +38,7 @@ const Reviews = (props) => {
 
         const getReviews = async () => {
             // Fetch all reviews from DB
-            const response = await fetch(`http://34.228.71.240:3090/reviews/`)
+            const response = await fetch(`http://34.227.48.9:3090/reviews/`)
             // const response = await fetch(`http://localhost:3000/reviews/`)
             // If successful...
             if (response) {
@@ -47,7 +47,7 @@ const Reviews = (props) => {
                 // GO through each review...
                 for (const reviewObj of JSONdata) {
                     // Fetch infro from API based on gameid
-                    const gameResponse = await fetch(`http://34.228.71.240:3060/api/games/${reviewObj.gameAPIId}`);
+                    const gameResponse = await fetch(`http://34.227.48.9:3060/api/games/${reviewObj.gameAPIId}`);
                     // JSON info
                     const JSONgameData = await gameResponse.json();
                     // Add game name to review object

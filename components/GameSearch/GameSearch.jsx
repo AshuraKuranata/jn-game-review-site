@@ -31,7 +31,7 @@ const GameSearch = ({setPage, gameData, setGameData}, props) => {
   const handleSearchSubmit = async (event) => { // Fetches data from the Games API
     event.preventDefault();
     let response = await fetch(
-        `http://34.228.71.240:3060/api/games/?search=${searchGameURL}`
+        `http://34.227.48.9:3060/api/games/?search=${searchGameURL}`
     )
     let JSONdata = await response.json()
     // console.log(JSONdata) // See specific data search

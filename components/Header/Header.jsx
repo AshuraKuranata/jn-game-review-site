@@ -9,7 +9,7 @@ const Header = (props) => {
     }
 
     const handleLogout = async () => {
-        await fetch('http://34.228.71.240:3090/auth/sign-out')
+        await fetch('http://34.227.48.9:3090/auth/sign-out')
         props.setUser({accountName: ''})
         props.setPage('home')
     }

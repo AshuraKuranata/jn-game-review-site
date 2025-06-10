@@ -17,7 +17,7 @@ const GameView = (props) => {
 
     useEffect(() => {
         const getUserReviews = async () => {
-            const response = await fetch(`http://34.228.71.240:3090/reviews/${props.user.accountName}`, {
+            const response = await fetch(`http://34.227.48.9:3090/reviews/${props.user.accountName}`, {
                 method: 'GET',
                 headers: {
                   'Content-Type': 'application/json'
@@ -47,7 +47,7 @@ const GameView = (props) => {
         } else if (event.target.name === 'review-delete') {
             console.log(event.target.value)
             
-            await fetch(`http://34.228.71.240:3090/reviews/${event.target.value}`, {
+            await fetch(`http://34.227.48.9:3090/reviews/${event.target.value}`, {
                 method: 'DELETE',
                 headers: {
                   'Content-Type': 'application/json'

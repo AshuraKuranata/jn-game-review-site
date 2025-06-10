@@ -5,7 +5,7 @@ const EditUsername = (props) => {
     const handleSubmit = async (event) => {
         try {
             event.preventDefault();
-            const Response = await fetch("http://34.228.71.240:3090/auth/edit-username", {
+            const Response = await fetch("http://34.227.48.9:3090/auth/edit-username", {
                 method: 'PUT',
                 headers: {
                   'Content-Type': 'application/json'
@@ -29,7 +29,7 @@ const EditUsername = (props) => {
 
     return (
         <>
-        <form className="usernameForm"action="http://34.228.71.240:3090/auth/edit-username" method="POST" onSubmit={handleSubmit}>
+        <form className="usernameForm"action="http://34.227.48.9:3090/auth/edit-username" method="POST" onSubmit={handleSubmit}>
             <p>Edit Username</p>
             <label htmlFor="userName">User Name:</label>
             <input type="text" name="userName" id="userName" required />
